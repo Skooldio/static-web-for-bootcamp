@@ -86,13 +86,13 @@ header {
 
 .feature-card {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: space-between;
   gap: 24px;
 }
 .feature-card-reverse {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   gap: 24px;
 }
@@ -116,3 +116,12 @@ header {
   font-size: 1.5rem;
   font-weight: 300;
 }
+
+@media (min-width: 1024px) {
+    .feature-card {
+      flex-direction: row;
+    }
+    .feature-card-reverse {
+      flex-direction: row-reverse;
+    }
+  }
