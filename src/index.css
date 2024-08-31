@@ -83,3 +83,36 @@ header {
   background-color: var(--color-primary);
   flex-grow: 1;
 }
+
+.feature-card {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 24px;
+}
+.feature-card-reverse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.feature-card > img,
+.feature-card-reverse > img {
+  flex: 30%;
+}
+.feature-card > div,
+.feature-card-reverse > div {
+  flex: 70%;
+  background-color: var(--color-wd-darkgre);
+  padding: 24px;
+}
+.feature-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.feature-card-description {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
