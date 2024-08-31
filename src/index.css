@@ -120,15 +120,31 @@ header {
 .images-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   place-items: center;
   gap: 1.5rem;
 }
 
 .images-grid > img {
   width: 100%;
-  height: 291px;
+  height: auto;
   object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .images-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .images-grid > img {
+    height: 291px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .images-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1024px) {
