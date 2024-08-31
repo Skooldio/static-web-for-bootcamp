@@ -30,3 +30,36 @@
   font-family: "poppins", "Arial", "sans-serif";
   color: var(--color-wd-white);
 }
+
+body {
+  background-color: var(--color-wd-black);
+}
+
+header {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    url("/assets/hero/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-title {
+  color: var(--color-primary);
+
+  /* normally, 1rem = 16px */
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.page-subtitle {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
