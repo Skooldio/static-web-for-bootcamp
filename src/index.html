@@ -145,6 +145,16 @@
   </body>
 
   <script>   
+   function submitForm(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const formProps = Object.fromEntries(formData);
+    e.target.reset();
+
+    alert(`You (${formProps.email}) have subscribed!`);
+    return false;
+  }
+  
     let slideIndex = 0;
     showSlide(slideIndex);
 
