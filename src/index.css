@@ -63,3 +63,23 @@ header {
   color: var(--color-primary);
   font-size: 1.5rem;
 }
+
+.section-title {
+  color: var(--color-primary);
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 48px 0px;
+}
+.section-title::before,
+.section-title::after {
+  content: "";
+  height: 1px;
+  background-color: var(--color-primary);
+  flex-grow: 1;
+}
